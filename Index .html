@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KLEUREN TOGGLE</title>
+    <link rel="stylesheet" href="./Stylesheet.css">
+</head>
+
+<body>
+
+    <nav class="Hamburger">
+        <div class="btn-toggle-nav" onMouseOver="openNav()" id="toggleID">
+        </div>
+    </nav>
+
+    <aside id="mySidebar" class="sidebar">
+        <p class="silverBG">This is the color SILVER</p>
+
+
+        <ul>
+            <li class="Silver Color" onclick="Silver()">
+
+                <input type="radio" id="radioSilver" name="radioColor" value="Silver" checked>
+                <label for="radioSilver">HOME</label>
+
+            </li>
+
+            <li class="Blue Color" onclick="Blue()">
+                <input type="radio" id="radioBlue" name="radioColor" value="Blue" checked>
+                <label for="radioBlue">BLUE</label>
+
+            </li>
+
+            <li class="Orange Color" onclick="Orange()">
+                <input type="radio" id="radioOrange" name="radioColor" value="Orange" checked>
+                <label for="radioOrange">ORANGE</label>
+
+            </li>
+
+            <li class="Red Color" onclick="Red()">
+                <input type="radio" id="radioRed" name="radioColor" value="Red" checked>
+                <label for="radioRed">RED</label>
+
+            </li>
+
+            <li class="Green Color" onclick="Green()">
+                <input type="radio" id="radioGreen" name="radioColor" value="Green" checked>
+                <label for="radioGreen">GREEN</label>
+
+            </li>
+        </ul>
+    </aside>
+
+    <div id="mysilverBG" class="silverBG">This is the color SILVER</div>
+    <div id="myblueBG" class="blueBG">This is the color BLUE</div>
+    <div id="myorangeBG" class="orangeBG">This is the color ORANGE</div>
+    <div id="myredBG" class="redBG">This is the color RED</div>
+    <div id="mygreenBG" class="greenBG">This is the color GREEN</div>
+
+
+    <script defer src="./script.JS"></script>
+</body>
+
+</html>
