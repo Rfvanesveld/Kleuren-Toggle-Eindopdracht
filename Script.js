@@ -1,6 +1,16 @@
-function openNav() {
-    document.getElementById("mySidebar").style.left = "10px";
-}
+document.getElementById("toggleID").addEventListener('mouseover', function () {
+    document.getElementById("mySidebar").style.left = "5px";
+});
+
+document.getElementById("mySidebar").addEventListener('mouseleave', function () {
+    document.getElementById("mySidebar").style.left = "-500px";
+});
+
+document.getElementById("toggleID").addEventListener('click', function () {
+    document.getElementById("mySidebar").style.left = "-500px";
+});
+
+
 function closeNav() {
     document.getElementById("mySidebar").style.left = "-500px";
 }
